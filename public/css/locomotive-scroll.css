@@ -1,0 +1,22 @@
+[data-scroll-container] {
+    overflow: hidden;
+  }
+  
+  [data-scroll-section] {
+    position: relative;
+    will-change: transform;
+  }
+  
+  .is-inview {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  }
+  
+  .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
